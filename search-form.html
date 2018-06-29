@@ -10,13 +10,11 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-    <script src="script.js"></script>  	
+    <script src="script.js"></script>    
 	<script type="text/javascript" src="datajs/jq.js"></script>
-	<script type="text/javascript" src="datajs/geturi.js"></script>
 	<script src="datajs/globalvar.js"></script>
 	<script src="datajs/jquery.session.js"></script>
-	<script src="datajs/common_functions.js"></script>
-	<script src="datajs/search-route-list.js"></script>
+	<script src="datajs/search-route-list.js"></script>    
 </head>
 <body>
 <div id="header">
@@ -31,20 +29,38 @@
 	  <a href="profile.html"><i class="fa fa-user-plus"></i>Profile</a>
 	  <a href="#"><i class="fa fa-power-off"></i>Log Out</a>
 	</div>
-<span onClick="openNav()"><i class="fa fa-navicon"></i></span>
-  <div id="sections_btn_holder">
-    <div>Search <span id="navarrow"><i class="fa fa-search"></i></span></div>
-  </div>
+<span onClick="openNav()"><i class="fa fa-navicon">&nbsp;Buy Now</i></span> 
+
 </div>
 <div id="container" class="landing">
-<div class="results" id="results_list">
-	<img src="image/loader.gif" alt="Loading..." id="loader" />
-  <div id="sections_panel">
-	<center><span id="show_time">Tue Jan 23 00.00.00 GMT+5.30 2018</span></center>
-  </div>
-	
+<div class="submitform">
+	<form action="search.html" method="get">
+		<div class="fromto">
+			<label>From</label><br>
+			<i class="fa fa-search"></i><input class="location" type="text" id="from_str" name="fplace" placeholder="Select From Location"><br>
+			<label>To</label><br>
+			<i class="fa fa-search"></i><input type="text" name="tplace" id="to_str" placeholder="Select Destination Location"><br>
+		</div>
+		<div class="datesel">
+			<label>Journey Date</label><br>
+			<input id="journey" type="date" value="2018-01-16"/>
+		<span class="left">
+			<label>From Time</label><br>
+			<input id="exit-time" name="exit-time" type="time">
+		</span>
+		<span class="right">
+			<label>To Time</label><br>
+			<input id="exit-time" name="exit-time" type="time">
+		</span>
+		</div>	
+	  <input type="submit" value="Search Buses">
+	</form> 
 </div>
 
+	
+
+
+	
 </div>
 </body>
 </html>

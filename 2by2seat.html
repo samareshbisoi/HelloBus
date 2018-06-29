@@ -17,7 +17,7 @@
 <body>
 <div id="header">
 	<div id="Sidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-long-arrow-left"></i></a>
+    <a href="javascript:void(0)" class="closebtn" onClick="closeNav()"><i class="fa fa-long-arrow-left"></i></a>
     <a class="profile" href="#"><i class="fa fa-user-circle-o"></i> Samresh </a>
     <a href="index.html"><i class="fa fa-ticket"></i>Buy Now</a>
     <a href="available-routes.php"><i class="fa fa-bus"></i>Available Routes</a>
@@ -27,7 +27,7 @@
     <a href="profile.html"><i class="fa fa-user-plus"></i>Profile</a>
     <a href="#"><i class="fa fa-power-off"></i>Log Out</a>
   </div>
-<span onclick="openNav()"><i class="fa fa-navicon"></i></span>
+<span onClick="openNav()"><i class="fa fa-navicon"></i></span>
 <span class="title">Select your Seat</span>
 </div>
 <div id="contain" class="select drvr">
@@ -84,10 +84,11 @@
         </li>
       </ol>
     </li>
-    <li class="row row--3">
+    <li class="row row--3" >
       <ol class="seats" type="A">
         <li class="seat">
-          <input type="checkbox" id="3A" />
+          <input type="checkbox" id="3A" /> 
+		  <label for="3D"></label>
         </li>
         <li class="seat">
           <input type="checkbox" id="3B" />
